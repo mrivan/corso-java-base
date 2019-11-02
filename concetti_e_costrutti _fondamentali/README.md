@@ -162,3 +162,61 @@ class Abete extends Albero
     }
 }
 ```
+
+> Esempi di linguaggi che supportano il paradigma a oggetti sono: Java, C#, C++, JavaScript, Smalltalk, Python e così via.
+
+> Prima di iniziare a scrivere del codice bisogna:
+> - Analisi. Questa è la fase dove bisogna recuperare delle informazioni preliminari allo sviluppo di un software, le quali possono riguardare la sua fattibilità in senso tecnico ed economico (analisi costi/benefici), il suo dominio applicativo, i suoi requisiti funzionali (cosa il software deve offrire) e così via. 
+> - Progettazione. In questa fase si inizia a ideare in modo più concreto come si può sviluppare il software che è stato oggetto della precedente analisi. In pratica il software viene scomposto in moduli e componenti e si definisce la loro interazione e anche il loro contenuto (dettaglio interno). La progettazione indica, pertanto, come il software deve essere implementato piuttosto di cosa deve fare il software (appannaggio della fase di analisi).
+> - Codifica. Questa è la fase in cui si implementa concretamente il software oggetto della progettazione. In pratica, attraverso l’utilizzo di un editor di testo, si scrivono gli algoritmi, le funzionalità e le istruzioni del programma codificate secondo la sintassi propria del linguaggio Java. Il codice scritto nell’editor è detto codice sorgente (source code), e il file prodotto è un file di codice sorgente (source code file).
+
+
+### Da dove si inizia? 
+Per poter programmare in Java è necessario scaricare il [JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html). 
+Dopo l’installazione del JDK avremo a disposizione tutti gli strumenti per compilare ed eseguire i programmi creati, incluse svariate librerie di classi dette API (Application Programming Interface).
+
+Impostare le variabili di ambiente **PATH** e **JAVA_HOME**
+
+- In Cerca cercate e selezionate: **Sistema (Pannello di controllo)**
+- Fate clic sul collegamento **Impostazioni di sistema avanzate**.
+- Fate clic su Variabili di ambiente. Nella sezione Variabili di sistema, trovate la variabile di ambiente **PATH** e selezionatela. 
+- Fate clic su **Modifica**. Se la variabile di ambiente **PATH non esiste**, fate clic su **Nuovo**.
+- Nella finestra Modifica variabile di sistema o Nuova variabile di sistema specificare il valore della variabile di ambiente PATH (Es. **C:\Program Files\Java\jdk-13\bin** ). 
+- Allo stesso modo aggiungiamo una nuova variabile d'ambiente **JAVA_HOME** e impostiamo il suo valore (Es. **C:\Program Files\Java\jdk-13** ).  
+  Fate clic su OK. Chiudere tutte le altre finestre facendo clic su OK.
+- Riaprite la finestra del prompt dei comandi ed eseguite il codice Java
+
+Nella cartella bin (C:\Program Files\Java\jdk-13\bin) troviamo i file utili per lo sviluppo come: 
+- **javac.exe** (il compilatore dal codice sorgente Java in codice intermedio bytecode), 
+- **java.exe** (il launcher di un’applicazione Java), 
+- **jar.exe** (il gestore per file di archivi basati sul formato Java ARchive o JAR), 
+- **javap.exe** (il disassemblatore di file .class) 
+- e così via.
+
+###  Come si esegue il nostro codice Java
+Dopo aver scritto il programma con un IDE, vediamo come eseguirne la compilazione che, lo ricordiamo, è quel procedimento mediante il quale un compilatore Java 
+legge un file sorgente (nel nostro caso FirstProgram.java) e lo trasforma in un file (per esempio FirstProgram.class) che conterrà le istruzioni (bytecode) 
+proprie della Java Virtual Machine.
+
+Prima di vedere come utilizzare manualmente un compilatore Java, verifichiamo che esso sia disponibile nel sistema; da una shell (bash, command prompt e così via) 
+digitiamo, semplicemente, il comando **javac - version** e verifichiamo che appaiano, in output, le informazioni sull’attuale versione del compilatore in uso.
+
+**Invocazione del comando di compilazione (GNU/Linux e macOS).**
+
+$ javac -d $HOME/MY_JAVA_CLASSES FirstProgram.java
+
+**Invocazione del comando di compilazione (Windows).**
+
+C:\MY_JAVA_SOURCES> javac -d \MY_JAVA_CLASSES FirstProgram.java
+
+Dopo la fase di compilazione possiamo avviare ed eseguire il file prodotto tramite il comando java.
+
+**Avvio del programma (GNU/Linux e macOS).**
+
+[thp@localhost MY_JAVA_CLASSES]$ java it.corsojava.primoprogramma.FirstProgram
+
+**Avvio del programma (Windows).**
+
+C:\MY_JAVA_CLASSES> java it.corsojava.primoprogramma.FirstProgram
+
+In breve, il comando java lancia un’applicazione Java (legge il relativo file .class).
