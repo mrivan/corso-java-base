@@ -2,6 +2,18 @@ package it.corsojava.oop.incapsulamento.usoprivate;
 
 import java.io.Serializable;
 
+/**
+ * 
+ * @author I.Verzilli
+ * 
+ * Questa classe è considerata mutabile perchè ogni proprietà della classe 
+ * è modificabile attraverso l'utilizzo del metodo setXXX()
+ * 
+ * @N.B. Per rendere una classe immutabile basterebbe rimuovere tutti i set e 
+ *       lasciare soltanto il costruttore  Anagrafica(String nome, int eta);
+ *       
+ */
+
 public class Anagrafica implements Serializable{
 
 	private static final long serialVersionUID = 1L;
