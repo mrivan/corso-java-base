@@ -1,4 +1,4 @@
-package it.corsojava.primoprogramma;
+package it.corsojava.intro.primoprogramma;
 
 
 /**

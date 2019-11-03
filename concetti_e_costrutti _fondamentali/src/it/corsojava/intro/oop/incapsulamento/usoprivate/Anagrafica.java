@@ -1,4 +1,4 @@
-package it.corsojava.oop.incapsulamento.usoprivate;
+package it.corsojava.intro.oop.incapsulamento.usoprivate;
 
 import java.io.Serializable;
 

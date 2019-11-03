@@ -1,4 +1,4 @@
-package it.corsojava.oop.polimorfismo;
+package it.corsojava.intro.oop.polimorfismo;
 
 public class Abete extends Albero
 {

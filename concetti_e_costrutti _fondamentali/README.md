@@ -217,6 +217,6 @@ Dopo la fase di compilazione possiamo avviare ed eseguire il file prodotto trami
 
 **Avvio del programma (Windows).**
 
-C:\MY_JAVA_CLASSES> java it.corsojava.primoprogramma.FirstProgram
+C:\MY_JAVA_CLASSES> java it.corsojava.intro.primoprogramma.FirstProgram
 
 In breve, il comando java lancia un’applicazione Java (legge il relativo file .class).

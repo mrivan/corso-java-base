@@ -1,4 +1,4 @@
-package it.corsojava.oop.ereditarieta;
+package it.corsojava.intro.oop.ereditarieta;
 
 /**
  * ColloInVendita è la classe "derivata"
