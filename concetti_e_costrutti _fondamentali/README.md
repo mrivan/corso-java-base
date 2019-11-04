@@ -220,3 +220,26 @@ Dopo la fase di compilazione possiamo avviare ed eseguire il file prodotto trami
 C:\MY_JAVA_CLASSES> java it.corsojava.intro.primoprogramma.FirstProgram
 
 In breve, il comando java lancia un’applicazione Java (legge il relativo file .class).
+
+
+### Variabili e Costanti cosa sono e come si usano.
+
+#### Variabili
+Una variabile rappresenta uno spazio di memoria alterabile, all’interno del quale vengono memorizzati dei valori. 
+Per prima cosa è necessario dichiararne il tipo, cioè determinare che specie di dato potrà contenere. 
+
+### Costanti 
+Una costante rappresenta uno spazio di memoria a sola lettura (read-only), ossia una locazione di memoria nella quale 
+è memorizzato un valore che non può più essere alterato dopo essere stato assegnato.
+
+## Tipi di dato fondamentali o primitivi
+In Java i tipi di dato fondamentali sono:
+- **char** consente di memorizzare singoli caratteri 
+- **int** consente di memorizzare numeri interi
+- **float** e double consentono di memorizzare numeri decimali
+- **boolean** consente di memorizzare i valori booleani false e true
+- i tipi **byte**, **short** e **long** consentono di memorizzare numeri interi, ma con intervalli di valori più piccoli o più grandi rispetto al tipo int.
+
+
+
+
