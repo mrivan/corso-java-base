@@ -165,12 +165,6 @@ class Abete extends Albero
 
 > Esempi di linguaggi che supportano il paradigma a oggetti sono: Java, C#, C++, JavaScript, Smalltalk, Python e così via.
 
-> Prima di iniziare a scrivere del codice bisogna:
-> - Analisi. Questa è la fase dove bisogna recuperare delle informazioni preliminari allo sviluppo di un software, le quali possono riguardare la sua fattibilità in senso tecnico ed economico (analisi costi/benefici), il suo dominio applicativo, i suoi requisiti funzionali (cosa il software deve offrire) e così via. 
-> - Progettazione. In questa fase si inizia a ideare in modo più concreto come si può sviluppare il software che è stato oggetto della precedente analisi. In pratica il software viene scomposto in moduli e componenti e si definisce la loro interazione e anche il loro contenuto (dettaglio interno). La progettazione indica, pertanto, come il software deve essere implementato piuttosto di cosa deve fare il software (appannaggio della fase di analisi).
-> - Codifica. Questa è la fase in cui si implementa concretamente il software oggetto della progettazione. In pratica, attraverso l’utilizzo di un editor di testo, si scrivono gli algoritmi, le funzionalità e le istruzioni del programma codificate secondo la sintassi propria del linguaggio Java. Il codice scritto nell’editor è detto codice sorgente (source code), e il file prodotto è un file di codice sorgente (source code file).
-
-
 ### Da dove si inizia? 
 Per poter programmare in Java è necessario scaricare il [JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html). 
 Dopo l’installazione del JDK avremo a disposizione tutti gli strumenti per compilare ed eseguire i programmi creati, incluse svariate librerie di classi dette API (Application Programming Interface).
@@ -222,6 +216,12 @@ C:\MY_JAVA_CLASSES> java it.corsojava.intro.primoprogramma.FirstProgram
 In breve, il comando java lancia un’applicazione Java (legge il relativo file .class).
 
 
+> ###Prima di iniziare a scrivere del codice bisogna:
+> - Analisi. Questa è la fase dove bisogna recuperare delle informazioni preliminari allo sviluppo di un software, le quali possono riguardare la sua fattibilità in senso tecnico ed economico (analisi costi/benefici), il suo dominio applicativo, i suoi requisiti funzionali (cosa il software deve offrire) e così via. 
+> - Progettazione. In questa fase si inizia a ideare in modo più concreto come si può sviluppare il software che è stato oggetto della precedente analisi. In pratica il software viene scomposto in moduli e componenti e si definisce la loro interazione e anche il loro contenuto (dettaglio interno). La progettazione indica, pertanto, come il software deve essere implementato piuttosto di cosa deve fare il software (appannaggio della fase di analisi).
+> - Codifica. Questa è la fase in cui si implementa concretamente il software oggetto della progettazione. In pratica, attraverso l’utilizzo di un editor di testo, si scrivono gli algoritmi, le funzionalità e le istruzioni del programma codificate secondo la sintassi propria del linguaggio Java. Il codice scritto nell’editor è detto codice sorgente (source code), e il file prodotto è un file di codice sorgente (source code file).
+
+
 ### Variabili e Costanti cosa sono e come si usano.
 
 #### Variabili
@@ -240,6 +240,17 @@ In Java i tipi di dato fondamentali sono:
 - **boolean** consente di memorizzare i valori booleani false e true
 - i tipi **byte**, **short** e **long** consentono di memorizzare numeri interi, ma con intervalli di valori più piccoli o più grandi rispetto al tipo int.
 
+## Tipi di dato Wrapper class
+Ogni tipo di dato fondamentale ha un corrispettivo Wrapper Class qui oltre a fornire il valore offrono appositi costruttori, metodi e costanti.
+- **Char** consente di memorizzare singoli caratteri 
+- **Integer** consente di memorizzare numeri interi
+- **Float** e double consentono di memorizzare numeri decimali
+- **Boolean** consente di memorizzare i valori booleani false e true
+- i tipi **Byte**, **Short** e **Long** consentono di memorizzare numeri interi, ma con intervalli di valori più piccoli o più grandi rispetto al tipo int.
 
+## Variabili locali e Variabili globali
+In Java una variabile può essere definita come locale o come “globale”. 
+Una variabile è locale quando il suo nome, è usabile solo all’interno del blocco di codice in cui è dichiarata. 
 
+I membri di una classe, tipo le variabili di istanza, sono, variabili “globali” e sono utilizzabili ovunque all’interno di tale classe.
 
